@@ -1,0 +1,4 @@
+#Thu Sep 12 09:04:35 UTC 2024
+base.0=/home/user/flutter_webview/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
