@@ -28,23 +28,19 @@ class _WebviewPageState extends State<WebviewPage> {
           onPageFinished: (String url) {},
           onWebResourceError: (WebResourceError error) {},
           onNavigationRequest: (NavigationRequest request) {
-            if (request.url.startsWith('https://www.youtube.com/')) {
+            if (request.url.startsWith('https://ssyarl.com/')) {
               return NavigationDecision.prevent;
             }
             return NavigationDecision.navigate;
           },
         ),
       )
-      ..loadRequest(Uri.parse('https://github.com/bahrie127'));
+      ..loadRequest(Uri.parse('https://ssyarl.com/'));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Github Code with Bahri"),
-          actions: const [],
-        ),
         body: WebViewWidget(controller: _controller!));
   }
 }
